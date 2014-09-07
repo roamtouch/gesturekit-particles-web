@@ -1,6 +1,6 @@
 # Particles
 
-A DOM particle system for web browsers.
+A DOM particle system.
 
 ## Compatibility
 [TODO]
