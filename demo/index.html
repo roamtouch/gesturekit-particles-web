@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Helper.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+      html {
+        background: url('bg.jpg') no-repeat center top;
+        background-size: cover;
+      }
+
+      body {
+        min-height: 100%;
+        background-color: #000;
+      }
+
+      .rkt {
+        display: block;
+        width: 97px;
+        height: 168px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left:-48px;
+        background: transparent url('rkt2.png') no-repeat center bottom;
+        background-size: 25%;
+        -webkit-transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
+        -moz-transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
+        -ms-transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
+        transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rkt"></div>
+    <script src="../../gesturekit.js/dist/gesturekit.js"></script>
+    <script src="../index.js"></script>
+    <script>
+      var rkt = document.querySelector('.rkt');
+      gesturekit.on('RIGHT', function (eve) {
+        rkt.style['-webkit-transform'] = 'translate3d(' + 0 + 'px,' + -700 + 'px, 0)';
+      });
+      gesturekit.on('LEFT', function (eve) {
+        rkt.style['-webkit-transform'] = 'translate3d(0,0,0)';
+      });
+      gesturekit.touchParticles();
+
+      gesturekit.init({
+        'gid': 'dc6a09b0-250b-4823-b208-264ad4c0a50b'
+      });
+    </script>
+  </body>
+</html>
