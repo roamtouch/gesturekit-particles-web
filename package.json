@@ -1,0 +1,36 @@
+{
+  "name": "particles",
+  "repository": "git@github.com:roamtouch/particles.git",
+  "description": "A small library that implements the Mediator Pattern in JavaScript.",
+  "contributors": [
+    {
+      "name": "Guille Paz",
+      "email": "guille87paz@gmail.com"
+    },
+    {
+      "name": "Ivan Venelinov Shulev",
+      "email": "ivan.venelinov.shulev@gmail.com"
+    }
+  ],
+  "version": "0.0.1",
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "^1.0.5",
+    "gulp-jasmine": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-uglify": "^0.3.1",
+    "mkdirp": "^0.3.5"
+  },
+  "main": "index.js",
+  "keywords": [
+    "particles",
+    "particle system"
+  ],
+  "license": "Apache v2 license"
+}
