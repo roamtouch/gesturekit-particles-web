@@ -2,18 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Helper.js</title>
+    <title>Particles Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <style>
       html {
-        background: url('bg.jpg') no-repeat center top;
+        background: url('src/bg.jpg') no-repeat center top;
         background-size: cover;
       }
 
       body {
-        min-height: 100%;
-        background-color: #000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
 
       .rkt {
@@ -24,7 +33,7 @@
         bottom: 30px;
         left: 50%;
         margin-left:-48px;
-        background: transparent url('rkt2.png') no-repeat center bottom;
+        background: transparent url('src/rkt2.png') no-repeat center bottom;
         background-size: 25%;
         -webkit-transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
         -moz-transition: all 1s cubic-bezier(0.5, -0.28, 0.77, 1.25);
@@ -35,7 +44,8 @@
   </head>
   <body>
     <div class="rkt"></div>
-    <script src="../../gesturekit.js/dist/gesturekit.js"></script>
+
+    <script src="src/gesturekit.min.js"></script>
     <script src="../index.js"></script>
     <script>
       var rkt = document.querySelector('.rkt');
