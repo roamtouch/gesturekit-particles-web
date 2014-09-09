@@ -12,7 +12,7 @@ You should download the dependency and reference the JavaScript file using a `<s
 <script src="gesturekit.min.js"></script>
 ```
 
-### Add gesturekit.helper.js into your HTML file.
+### Add gesturekit.particles.js into your HTML file.
 You should download the library and reference the JavaScript file using a `<script>` tag somewhere on your HTML pages.
 ```html
 <script src="gesturekit.particles.min.js"></script>
