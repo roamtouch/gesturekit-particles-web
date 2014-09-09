@@ -1,7 +1,6 @@
 /**
  * @author Guille Paz <guille87paz@gmail.com>
  */
-
 (function (window, gesturekit) {
     'use strict';
 
@@ -34,10 +33,10 @@
     function Particles() {
         this.particles = [];
         this.theme = [
-            'https://raw.githubusercontent.com/RoamTouch/demo-gkplayer-web/development/src/particles/p1.png',
-            'https://raw.githubusercontent.com/RoamTouch/demo-gkplayer-web/development/src/particles/p2.png',
-            'https://raw.githubusercontent.com/RoamTouch/demo-gkplayer-web/development/src/particles/p3.png',
-            'https://raw.githubusercontent.com/RoamTouch/demo-gkplayer-web/development/src/particles/p4.png'
+            'https://cldup.com/WdAra43zR9-3000x3000.png',
+            'https://cldup.com/_4RkMnPjNm-3000x3000.png',
+            'https://cldup.com/DG3U-_BNCL-3000x3000.png',
+            'https://cldup.com/eEgiOGQ-68-3000x3000.png'
         ];
         this._defineEvents();
         return this;
