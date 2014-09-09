@@ -1,4 +1,4 @@
-# Particles
+# GestureKit Particles
 
 A DOM particle system.
 

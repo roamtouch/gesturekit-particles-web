@@ -59,7 +59,10 @@
                 dx = Math.random() * 20,
                 dy = Math.random() * 20;
 
-            that.draw((x+dx).toFixed(2), (y+dy).toFixed(2));
+            x = (x + dx).toFixed(2);
+            y = (y + dy).toFixed(2);
+
+            that.draw(x, y);
         });
 
         gesturekit.on('gestureend', function () {
@@ -112,15 +115,19 @@
      * @returns {particles}
      */
     Particles.prototype.destroy = function() {
-        var particles = this.particles;
-        for (var i = 0; i < particles.length; i += 1) {
+        var particles = this.particles,
+            len = particles.length,
+            i = 0,
+            j = 0;
+
+        for (i; i < len; i += 1) {
             particles[i].style[prefix + 'transform'] = 'translate3d(' + (parseInt(particles[i].getAttribute('data-x'), 10) + Math.floor(Math.random() * 201) - 100) + 'px,' + (parseInt(particles[i].getAttribute('data-x'), 10) + Math.floor(Math.random() * 201) - 100) + 'px, 0)';
             particles[i].style.opacity = 0;
         }
 
         setTimeout(function() {
-            for (var i = 0 ; i < particles.length ; i += 1) {
-                particles[i].remove();
+            for (j; j < len ; j += 1) {
+                particles[j].remove();
             }
             particles.length = 0;
         }, 800);

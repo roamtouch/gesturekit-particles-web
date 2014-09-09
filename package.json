@@ -1,7 +1,7 @@
 {
-  "name": "particles",
-  "repository": "git@github.com:roamtouch/particles.git",
-  "description": "A small library that implements the Mediator Pattern in JavaScript.",
+  "name": "gesturekit-particles-web",
+  "repository": "git@github.com:roamtouch/gesturekit-particles-web.git",
+  "description": "A DOM particle system.",
   "contributors": [
     {
       "name": "Guille Paz",
