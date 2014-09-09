@@ -3,8 +3,11 @@
 > A DOM particle system.
 
 ## Demo
-<img src="https://cldup.com/IHljZJd8bD.gif" alt="GestureKit Particles Demo">
+
 [Live Demo](http://roamtouch.github.io/gesturekit-particles-web)
+
+<img src="https://cldup.com/IHljZJd8bD.gif" alt="GestureKit Particles Demo">
+
 
 ## Usage
 
