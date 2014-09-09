@@ -1,0 +1,32 @@
+{
+  "name": "gesturekit-particles-web",
+  "repository": "git@github.com:roamtouch/gesturekit-particles-web.git",
+  "description": "A DOM particle system.",
+  "contributors": [
+    {
+      "name": "Guille Paz",
+      "email": "guille87paz@gmail.com"
+    },
+    {
+      "name": "Ivan Venelinov Shulev",
+      "email": "ivan.venelinov.shulev@gmail.com"
+    }
+  ],
+  "version": "0.0.1",
+  "scripts": {
+    "start": "grunt dist",
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-jslint": "0.2.6",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-uglify": "0.2.2"
+  },
+  "main": "index.js",
+  "keywords": [
+    "particles",
+    "particle system"
+  ],
+  "license": "Apache v2 license"
+}
