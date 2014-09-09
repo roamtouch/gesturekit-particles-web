@@ -46,7 +46,7 @@
     <div class="rkt"></div>
 
     <script src="src/gesturekit.min.js"></script>
-    <script src="src/index.js"></script>
+    <script src="src/gesturekit.particles.js"></script>
     <script>
       var rkt = document.querySelector('.rkt');
       gesturekit.on('RIGHT', function (eve) {
@@ -55,6 +55,7 @@
       gesturekit.on('LEFT', function (eve) {
         rkt.style['-webkit-transform'] = 'translate3d(0,0,0)';
       });
+
       gesturekit.touchParticles();
 
       gesturekit.init({
